@@ -1,0 +1,353 @@
+@import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@keyframes appear{
+    from{
+      opacity: 0;
+      scale: 0.5;
+    }
+    to{
+      opacity: 1;
+      scale: 1;
+    }
+  }
+.container {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.container-2 {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.carousel-container {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0%;
+
+}
+.my-portfolio{
+    height: auto;
+    background-image: url('https://res.cloudinary.com/nihars3/image/upload/v1696232927/photo-1619429858348-2d5ad1547e6c_nnvynb.jpg');
+    background-attachment: fixed;
+}
+.mass-logo{
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 50px;
+    color: greenyellow;
+}
+.navbar{
+    position: fixed;
+    padding-right: 50px;
+}
+nav.header-sticky {
+    position: fixed;
+    background-color: #e28b39;
+    z-index: 2000;
+    transition: .4s;
+}
+
+.a-nav{
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+.b-nav{
+    padding: 10px 20px;
+    color: white;
+    
+}
+.a-nav:hover{   
+    color: rgb(74, 188, 74);
+    font-weight: bold;
+    transform: translate(0, -5px);
+} 
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content-contact {
+    height: 20vh;
+}
+
+.menu-link.active {
+    font-weight: 800;
+    color: #ffc45c;
+} 
+
+.anchor{
+    margin-left: 850px;
+    font-family: "Roboto", sans-serif;
+    
+}
+.main-body{
+    height: 90vh;
+    padding-top: 100px;
+}
+.image-main{
+    animation: backInLeft ;
+    animation-duration: 1s;
+    padding-left:0px;
+    border-radius: 20px;
+}
+.main-box-left{
+    padding-left: 150px;
+}
+.main-box-right{
+    color: white;
+}
+.main-h{
+    font-size: 100px;
+    padding-top: 40px;
+    animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s;
+
+}
+.wrapper{
+    display: flex;
+}
+.wrapper.button{
+    list-style: none;
+}
+
+.anchor-1{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(28, 69, 214);
+    text-align: center;
+    line-height: 65px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+
+}
+.anchor-2{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(182, 46, 200);
+    text-align: center;
+    line-height: 65px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+
+}
+.anchor-3{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(53, 102, 237);
+    text-align: center;
+    line-height: 65px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+
+}
+.anchor-4{
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: rgb(53, 102, 237);
+    text-align: center;
+    line-height: 65px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+
+.fa-brands{
+    position: relative;
+    color: rgb(255, 255, 255);
+    transition: 0.45s;
+    z-index: 3; 
+}
+.anchor-1:hover{
+    box-shadow: 0 12px 12px 0 rgba(151, 138, 138, 0.24), 0 17px 50px 0 rgba(145, 126, 126, 0.19);
+    transform: translate(0, -10px);
+
+}
+.anchor-2:hover{
+    box-shadow: 0 12px 12px 0 rgba(151, 138, 138, 0.24), 0 17px 50px 0 rgba(145, 126, 126, 0.19);
+    transform: translate(0, -10px);
+}
+.anchor-3:hover{
+    box-shadow: 0 12px 12px 0 rgba(151, 138, 138, 0.24), 0 17px 50px 0 rgba(145, 126, 126, 0.19);
+    transform: translate(0, -10px);
+}
+.anchor-4:hover{
+    box-shadow: 0 12px 12px 0 rgba(151, 138, 138, 0.24), 0 17px 50px 0 rgba(145, 126, 126, 0.19);
+    transform: translate(0, -10px);
+}
+.body-section{
+    height: 90vh;
+}
+.box-left{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: right;
+    padding-left: 50px;
+
+}
+.image-about{
+    
+    border-radius: 50%;
+    animation: backInDown;
+    animation-duration: 1s;
+}
+.about{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-bottom: 20px    ;
+}
+
+.para{
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+}   
+.head{
+    color: greenyellow;
+    font-weight: 800;
+    font-size: 50px;
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+.img-w{
+    height: 500px;
+    width: 500px;
+}
+.my-work{
+    text-align: center;
+    font-size: 50px;
+}
+.carousel-container {
+    width: 1100px; /* 3 images x 100px + gaps */
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.carousel-track {
+    display: flex ;
+    transition: transform 0.3s ease-in-out;
+    gap: 20px;
+}
+
+.carousel-track img {
+    width: 550px;
+    height: 650px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+.what-we-do {
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.about-h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 50px;
+    padding-top: 100px;
+    
+}
+.about-p{
+    font-size: 30px;
+}
+.s-icons-1{
+    display: flex;
+    height: 100px;
+    padding-left: 300px;
+}
+.s-para{
+    text-align:center;
+    padding-top: 30px;
+    font-size:22px;
+    padding-right: 180px;
+    padding-left: 20px;
+}
+.s-icons-2{
+    display: flex;
+    height: 100px;
+    padding-left: 550px;
+}
+.img-4{
+    height: 90px;
+}
+.s-icons-3{
+    display: flex;
+    height: 200px;
+    padding-left: 300px;
+}
+.img-s{
+    padding-right:200px ;
+}
+.contact-info{
+    height: 30vh;
+    padding-top: 10px;
+    background-color: rgb(78, 59, 59);
+}
+.container-3{
+    padding-left: 100px;
+    color: rgb(255, 255, 255);
+    
+}
+.info-p{
+    font-size: 30px;
+}

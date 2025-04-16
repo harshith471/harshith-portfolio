@@ -41,12 +41,30 @@
 .navbar{
     position: fixed;
     padding-right: 50px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+.navbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: 0.5s;
+}
+.navbar:hover::before{
+    left: 100%;
 }
 nav.header-sticky {
     position: fixed;
-    background-color: #e28b39;
+    background-color: rgba(255, 255, 255, .1);
     z-index: 2000;
     transition: .4s;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
 }
 
 .a-nav{
